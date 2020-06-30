@@ -23,7 +23,7 @@ AS=as
 # Macros
 CND_PLATFORM=Cygwin-Windows
 CND_DLIB_EXT=dll
-CND_CONF=Release
+CND_CONF=Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 
@@ -34,7 +34,8 @@ include Makefile
 OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES= \
+	${OBJECTDIR}/JeffryLarin_9\ Ed_\ Chap\ 3_Problem\ 13_Currency.o
 
 
 # C Compiler Flags
@@ -55,11 +56,17 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_3_problem_12_celsius_to_fahrenheit.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_3_problem_13_currency.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_3_problem_12_celsius_to_fahrenheit.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_3_problem_13_currency.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_3_problem_12_celsius_to_fahrenheit ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_3_problem_13_currency ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+.NO_PARALLEL:${OBJECTDIR}/JeffryLarin_9\ Ed_\ Chap\ 3_Problem\ 13_Currency.o
+${OBJECTDIR}/JeffryLarin_9\ Ed_\ Chap\ 3_Problem\ 13_Currency.o: JeffryLarin_9\ Ed_\ Chap\ 3_Problem\ 13_Currency.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/JeffryLarin_9\ Ed_\ Chap\ 3_Problem\ 13_Currency.o JeffryLarin_9\ Ed_\ Chap\ 3_Problem\ 13_Currency.cpp
 
 # Subprojects
 .build-subprojects:

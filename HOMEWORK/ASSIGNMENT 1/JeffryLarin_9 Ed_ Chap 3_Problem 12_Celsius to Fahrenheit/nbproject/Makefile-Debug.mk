@@ -34,8 +34,7 @@ include Makefile
 OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
-OBJECTFILES= \
-	${OBJECTDIR}/JeffryLarin_13\ Ed_\ Chap\ 3_Problem\ 12_Celsius\ to\ Fahrenheit.o
+OBJECTFILES=
 
 
 # C Compiler Flags
@@ -56,17 +55,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cppapplication_1.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_3_problem_12_celsius_to_fahrenheit.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cppapplication_1.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_3_problem_12_celsius_to_fahrenheit.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cppapplication_1 ${OBJECTFILES} ${LDLIBSOPTIONS}
-
-.NO_PARALLEL:${OBJECTDIR}/JeffryLarin_13\ Ed_\ Chap\ 3_Problem\ 12_Celsius\ to\ Fahrenheit.o
-${OBJECTDIR}/JeffryLarin_13\ Ed_\ Chap\ 3_Problem\ 12_Celsius\ to\ Fahrenheit.o: JeffryLarin_13\ Ed_\ Chap\ 3_Problem\ 12_Celsius\ to\ Fahrenheit.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/JeffryLarin_13\ Ed_\ Chap\ 3_Problem\ 12_Celsius\ to\ Fahrenheit.o JeffryLarin_13\ Ed_\ Chap\ 3_Problem\ 12_Celsius\ to\ Fahrenheit.cpp
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_3_problem_12_celsius_to_fahrenheit ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 # Subprojects
 .build-subprojects:

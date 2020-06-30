@@ -7,15 +7,15 @@
 # Macros
 TOP=`pwd`
 CND_PLATFORM=Cygwin-Windows
-CND_CONF=Release
+CND_CONF=Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_3_problem_12_celsius_to_fahrenheit
-OUTPUT_BASENAME=jeffrylarin_9_ed__chap_3_problem_12_celsius_to_fahrenheit
-PACKAGE_TOP_DIR=jeffrylarin9edchap3problem12celsiustofahrenheit/
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_4_problem_10_days_in_month
+OUTPUT_BASENAME=jeffrylarin_9_ed__chap_4_problem_10_days_in_month
+PACKAGE_TOP_DIR=jeffrylarin9edchap4problem10daysinmonth/
 
 # Functions
 function checkReturnCode
@@ -60,15 +60,15 @@ mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory "${NBTMPDIR}/jeffrylarin9edchap3problem12celsiustofahrenheit/bin"
+makeDirectory "${NBTMPDIR}/jeffrylarin9edchap4problem10daysinmonth/bin"
 copyFileToTmpDir "${OUTPUT_PATH}.exe" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/jeffrylarin9edchap3problem12celsiustofahrenheit.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/jeffrylarin9edchap4problem10daysinmonth.tar
 cd ${NBTMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/jeffrylarin9edchap3problem12celsiustofahrenheit.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/jeffrylarin9edchap4problem10daysinmonth.tar *
 checkReturnCode
 
 # Cleanup

@@ -3,9 +3,9 @@
     <type>org.netbeans.modules.cnd.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>JeffryLarin_13 Ed_ Chap 3_Problem 12_Celsius to Fahrenheit</name>
+            <name>JeffryLarin_9 Ed_ Chap 6_Problem 7_ Celsius Temperature Table</name>
             <c-extensions/>
-            <cpp-extensions/>
+            <cpp-extensions>cpp</cpp-extensions>
             <header-extensions/>
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>

@@ -34,7 +34,8 @@ include Makefile
 OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES= \
+	${OBJECTDIR}/JeffryLarin_9\ Ed_\ Chap\ 6_Problem\ 7_\ Celsius\ Temperature\ Table.o
 
 
 # C Compiler Flags
@@ -55,11 +56,17 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_3_problem_12_celsius_to_fahrenheit.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_6_problem_7__celsius_temperature_table.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_3_problem_12_celsius_to_fahrenheit.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_6_problem_7__celsius_temperature_table.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_3_problem_12_celsius_to_fahrenheit ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jeffrylarin_9_ed__chap_6_problem_7__celsius_temperature_table ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+.NO_PARALLEL:${OBJECTDIR}/JeffryLarin_9\ Ed_\ Chap\ 6_Problem\ 7_\ Celsius\ Temperature\ Table.o
+${OBJECTDIR}/JeffryLarin_9\ Ed_\ Chap\ 6_Problem\ 7_\ Celsius\ Temperature\ Table.o: JeffryLarin_9\ Ed_\ Chap\ 6_Problem\ 7_\ Celsius\ Temperature\ Table.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/JeffryLarin_9\ Ed_\ Chap\ 6_Problem\ 7_\ Celsius\ Temperature\ Table.o JeffryLarin_9\ Ed_\ Chap\ 6_Problem\ 7_\ Celsius\ Temperature\ Table.cpp
 
 # Subprojects
 .build-subprojects:

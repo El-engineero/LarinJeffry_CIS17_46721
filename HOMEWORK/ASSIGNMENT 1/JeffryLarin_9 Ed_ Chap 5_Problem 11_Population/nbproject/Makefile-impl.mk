@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=JeffryLarin_9 Ed_ Chap 3_Problem 12_Celsius to Fahrenheit
+PROJECTNAME=JeffryLarin_9 Ed_ Chap 5_Problem 11_Population
 
 # Active Configuration
 DEFAULTCONF=Debug

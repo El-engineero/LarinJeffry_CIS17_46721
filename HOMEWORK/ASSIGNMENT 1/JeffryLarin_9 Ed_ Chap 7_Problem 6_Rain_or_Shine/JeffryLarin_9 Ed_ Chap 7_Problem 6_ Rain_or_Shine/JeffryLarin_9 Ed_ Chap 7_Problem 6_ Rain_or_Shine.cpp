@@ -8,7 +8,7 @@
   *   File: JeffryLarin_9 Ed_ Chap 7_Problem 6_ Rain_or_Shine.cpp  
   * Author: Jeffry Larin
   *
-  * Created on June 23, 2020, 2:35 PM
+  * Created on June 26, 2020, 2:00 PM
   */
 
 #include <iostream>
